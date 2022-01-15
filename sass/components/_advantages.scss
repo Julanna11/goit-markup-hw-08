@@ -1,0 +1,112 @@
+/* Advantages */
+.advantages{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+   @media screen and (max-width: 767px) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+    @media (min-width:768px) and (max-width:1199px){
+      flex-wrap: wrap;
+      margin: -15px;
+      }
+  }
+
+.advantages__item {
+@media  (max-width:767px) {
+margin-right: 0;
+width: 100%; 
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+margin:15px;
+width: calc((100% - 4 * 15px) / 2);
+}
+
+@media (min-width:1200px) {
+display: flex;
+flex-direction: column;
+width: calc((100% - 90px) / 4);
+margin-right: var(--card-set-gap);
+}
+  }
+
+.advantages__item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.advantages-img__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--button-secondary-bcg-color);
+    border-radius: 4px;
+    margin-bottom: var(--card-set-gap);
+}
+
+.advantages__title {
+  @media (max-width:767px) {
+    text-align: center;
+     }
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.advantages__desc {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+
+
+
+
+/* .title .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
+  background-color: var(--button-secondary-bcg-color);
+  border-radius: 4px;
+  margin-bottom: var(--card-set-gap);
+}
+
+.advantages-img__icon::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+} */
+
+
+
+
+
+/* .advantages__item:nth-child(4n) {
+  margin-right: 0;
+} */
+
