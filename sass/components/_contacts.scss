@@ -146,6 +146,18 @@ color:var(--accent-text-color);
 text-decoration: none;
   }
 
+  .header-socials__link--current{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color:var(--accent-text-color);
+  text-decoration: none;
+    }
+
   .header-socials__link::after{
   content: ' ';
   display: inline-block;
