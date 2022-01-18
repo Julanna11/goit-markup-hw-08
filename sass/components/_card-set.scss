@@ -1,54 +1,45 @@
 /* Portfolio */
-
 /* card-set */
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
-
 .card-set {
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 0;      
   }
 
-  @media(min-width:768px) and (max-width:1199px){
+  @media (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     margin: -15px;
   }
 
-  @media(min-width:1200px){
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+  @media (min-width: 1200px) {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
   }
-
 }
 
 .card-set__item {
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     margin-bottom: 30px;
-   }
-  @media(min-width:768px) and (max-width:1199px){
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
     margin: 15px;
-   }
+    flex-basis: calc((100% - 60px) / 2);
+  }
 
-  @media(min-width:1200px){
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-  background: #ffffff;
-  transition: box-shadow 250ms var(--animation-timing);
-}
+  @media (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+    background: #ffffff;
+    transition: box-shadow 250ms var(--animation-timing);
+  }
 }
 
 .card-set__item:focus,
@@ -59,11 +50,10 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
 .card__thumb {
   position: relative;
   overflow: hidden;
-   }
+}
 
 .card__overlay {
   position: absolute;
@@ -80,7 +70,7 @@
 .card:hover .card__overlay {
   transform: translateY(0);
 }
-.picture{
+.picture {
   display: block;
   max-width: 100%;
   height: auto;
@@ -94,7 +84,7 @@
   // max-width: 322px;
   height: auto;
   width: 100%;
-  padding: 63px 24px;
+  padding: 24px;
 
   font-style: normal;
   font-weight: normal;
@@ -107,9 +97,10 @@
 /* .card__thumb:hover::before{
   opacity: 0;
 } */
-.card{
+.card {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .card__content {
   padding: 20px 24px;
@@ -118,7 +109,7 @@
 }
 
 .card__title {
-   margin-bottom: 4px;
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;

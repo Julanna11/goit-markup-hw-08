@@ -2,8 +2,9 @@
 
 /* Site nav */
 
+
 .header {
-  @media (max-width:767px) {
+    @media (max-width:767px) {
     position: relative;
     border-bottom: 1px solid #ececec;
      }
@@ -18,9 +19,13 @@
   @media screen and (min-width: 1200px) {
      display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid #ececec;
-    // background-color: aqua;
     }
+  }
+
+  .border{
+    border-bottom: 1px solid #ececec;
   }
 
 .site-nav {
@@ -33,11 +38,14 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+     width: 100%;
+   
   }
 }
 
@@ -158,7 +166,7 @@ letter-spacing: 0.02em;
  
   color: var(--accent-text-color);
 
-  @media (min-width:767px) and (max-width:1200px) {
+  @media (min-width:768px) {
   &::after {
     content: ' ';
     display: block;
