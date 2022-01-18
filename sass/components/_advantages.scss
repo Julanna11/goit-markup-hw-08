@@ -38,7 +38,9 @@ margin-right: var(--card-set-gap);
   }
 
 .advantages__item:not(:last-child){
-  margin-bottom: 10px;
+  @media (max-width: 767px){
+    margin-bottom: 30px;
+  }
 }
 
 .advantages-img__item {

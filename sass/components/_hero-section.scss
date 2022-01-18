@@ -1,19 +1,14 @@
 /* Main first section */
 
 .business-decision {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     padding-top: 118px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
-    text-align: center;
+    padding-bottom: 118px;
     background: #2f303a;
-    padding-top: 118px;
-    padding-bottom: 204px;
   }
 
+ 
   @media screen and (min-width: 1200px) {
     text-align: center;
     background: #2f303a;
